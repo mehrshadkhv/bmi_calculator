@@ -18,6 +18,7 @@ class MyApp extends StatelessWidget {
     return ChangeNotifierProvider(
       create: (_) => BmiProvider(),
       child: MaterialApp(
+        debugShowCheckedModeBanner: false,
         title: 'BMI Calculator',
         theme: ThemeData(
           appBarTheme: const AppBarTheme(
